@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        img{
+            max-width: 100%;
+        }
+        body{
+            margin: 0;
+        }
+        .fluid{
+            display: grid;
+            grid-template-columns: 100%;
+            background-color:  rgb(16 201 225); 
+        }
+        .section{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .one{
+            display: grid;
+            grid-template-columns: 7% 7% 7% 7% 7% 7%;
+            column-gap: 7px;
+            margin-left: 100px;
+            color: white;
+        }
+        .one p{
+            border-right: 1px solid white;
+        }
+        .one p:nth-last-child(1){
+            border: 0;
+        }
+        .two {
+            display: grid;
+            grid-template-columns: 15% 20%;
+            justify-content: end;
+            margin-right: 20px;
+            height: 50px;
+            align-items: center;
+            color: white;
+        }
+        .two p{
+            border-right: 1px solid white;
+            margin: 5px;
+        }
+        .two p:nth-last-child(1){
+            border: 0;
+        }
+        .row1{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            width:100%;
+            height: 100px;
+        }
+        .heading{
+        width:30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+         }
+        .heading img{
+            height: 85px;
+        }
+        .row1 .menu{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 70%;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        height: 100px;
+     }   
+     .menu p{
+            background-color: rgb(3, 77, 52);
+            padding: 10px;
+            margin: 10px;
+        }
+        .image{
+        background-image: url(image/logistics-company.jpg);
+        background-position:center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        height: 730px;
+     }
+     .space{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 90%;
+        margin: auto;
+        height: 730px;
+        justify-content: center;
+        align-content: center;
+     }
+     .col1,.col2,.col3{
+        margin: 10px;
+     }
+     .col1 h1,.col2 h1,.col3 h1{
+        display: grid;
+        height: 80px;
+        background-color: rgba(79, 5, 228, 0.3);
+        text-align: center;
+        align-content: center;
+        margin: 0;
+        color: white;
+     }
+     .col1 .para,.col2 .para,.col3 .para{
+        display: grid;
+        height: 230px;
+        font-size: large;
+        align-content: center;
+        justify-content: center;
+        background: rgba(55, 1, 1, 0.5);
+        color: white;
+        padding: 10px;
+     }
+     .col1 .read,.col2 .read,.col3 .read{
+        display: grid;
+        height: 70px;
+        color: white;
+        font-size: large;
+        align-content: center;
+        justify-content: center;
+        background: rgba(79, 5, 228, 0.3);
+     }
+     .row3{
+        background-color: white;
+        padding: 15px;
+     }
+     .imp{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 90%;
+        margin: auto;
+     }
+     .inside2,.inside1{
+        display: grid;
+        margin: 20px;
+     }
+     .whole{
+        background-color: #e0fcff;
+        height: 475px;
+        margin: 10px;
+     }
+     .inside1 h1,.inside2 h1{
+        text-align: center;
+        margin: 10px;
+     }
+     .inside1 > p {
+        display: grid;
+        color:white;
+        background-image: url(image/cargo.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 475px;
+        justify-content: center;
+        align-items: end;
+        text-align: justify;
+        font-size: larger;
+        margin: 10px;
+        padding: 15px;
+}
+.div1,.div2,.div3{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.percent{
+    margin: 5px;
+        padding: 5px;
+        height: 110px;
+        border: solid 1px #088494;
+     }
+     hr{
+    border: 0.5px  #088494 solid;
+}
+     .percent img{
+        height: 100px;
+     }
+     .side h1{
+        font-size: large;
+        margin: 5px;
+     }
+     .side p{
+        font-size: medium;
+        padding:2px;
+     }
+     .section1{
+        display: grid;
+        background-color: rgb(177, 182, 186);
+        padding: 30px;
+     }
+     .subsection{
+        text-align: center;
+     }
+     .flex{
+        display: grid;
+     }
+     .flex{
+       width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns:100%;
+     }
+     .sub{
+        display: grid;
+        grid-template-columns: 50% 50%;
+     }
+     .imageCon1,.imageCon2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 10px;
+     }
+     .project{
+        background-color: brown;
+     }
+     .commerce{
+        background-color: yellow;
+     }
+   .project h1,.commerce h1{
+    margin: 5px;
+    padding: 5px;
+    font-size: larger;
+    text-align: center;
+   }
+   .project p,.commerce p{
+    margin: 5px;
+    padding: 5px;
+    font-size: medium;
+    text-align: justify;
+   }
+   .end{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 33.33333333% 33.33333333% 33.33333333%;
+    margin:auto;
+   }
+   .mob::before{
+    content: "\260E";
+    margin: 4px;
+}
+.mail::before{
+    content:"\1F4E7";
+    margin: 2px;
+}
+.location::before{
+    content:"\1F4CD";
+    margin: 2px;
+}
+   .subend1,.subend2,.subend3{
+    margin: 10px;
+   }
+   .subend1 h1,.subend2 h1,.subend3 h1{
+      text-align: center;
+   }
+   .anc a{
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
+    margin: 5px;
+   }
+   form,form input{
+    padding:10px;
+    margin: 10px;
+}
+form {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+} 
+[type=email]{
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+}
+[type=submit]{
+    color:white;
+    background-color: red;
+    border: 0;
+   border-radius: 5px;
+   width: 30%;
+}
+.copy{
+    background-color: #d9e2ea;
+    width: 100%;
+    padding: 5px;
+}
+.close div{
+    text-align: center;
+    font-size: medium;
+    padding: 5px;
+}
+@media(max-width:576px){
+.section{
+    grid-template-columns: 100%;
+    height: 120px;
+}
+.one {
+    grid-template-columns: 14% 14% 14% 14% 14% 14%;
+    justify-content: center;
+    align-content: center;
+    margin-left: 0;
+    height: 60px;
+    font-size: small;
+}
+.two{
+    grid-template-columns: 30% 60%;
+    column-gap: 5px;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
+    margin-right: 0;
+    font-size: small;
+}
+.row1{
+    height: 200px;
+}
+.heading{
+    width:100%;
+}
+.row1 .menu {
+    width:100%;
+}
+.menu p {
+   padding: 5px;
+    margin: 5px;
+}
+.image,.space{
+    height: 300px;
+}
+.col1 h1, .col2 h1, .col3 h1{
+    height: 45px;
+    font-size: xx-small;
+}
+.col1 .para, .col2 .para, .col3 .para {
+    height: 80px;
+    font-size: 5px;
+}
+.col1 .read, .col2 .read, .col3 .read {
+    height: 25px;
+    font-size: 5px;
+}
+.imp{
+    grid-template-columns: 100%;
+}
+.inside2, .inside1 {
+    margin: 5px;
+}
+.inside1 h1,.inside2 h1{
+    font-size: medium;
+    margin: 0px;
+}
+.inside1 > p{
+    height: 275px;
+    font-size: xx-small;
+    padding: 10px;
+}
+.whole{
+    height: 275px;
+}
+.percent{
+    height: 60px;
+}
+.percent img {
+    height: 45px;
+}
+.side h1{
+   font-size: small;
+   margin: 5px;
+}
+.side p {
+    font-size: 5px;
+    padding: 5px;
+}
+.section1 {
+    padding: 15px;
+}
+.subsection h1 {
+    margin: 10px;
+    font-size: x-large;
+}
+.subsection p {
+    text-align: justify;
+    font-size: x-small;
+}
+.sub {
+    grid-template-columns: 100%;
+}
+.imageCon1, .imageCon2 {
+    grid-template-columns: 100%;
+    margin: 10px;
+}
+.pro img,.comm img{
+    height: 200px;
+}
+.project,.commerce{
+    height: 200px;
+}
+.project p, .commerce p {
+    margin: 5px;
+    padding: 5px;
+    font-size:8px;
+}
+.end {
+    grid-template-columns: 100%;
+}
+.subend1, .subend2, .subend3 {
+    margin: 5px;
+}
+.subend1 h1, .subend2 h1, .subend3 h1 {
+    margin: 10px;
+    font-size: x-large;
+}
+form, form input {
+    padding: 5px;
+    margin: 5px;
+}
+.close div {
+    font-size: small;
+    padding: 5px;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="fluid">
+        <div class="section">
+            <div class="one">
+                <p>Link 1</p>
+                <p>Link 2</p>
+                <p>Link 3</p>
+                <p>Link 4</p>
+                <p>Link 5</p>
+                <p>Link 5</p>
+            </div>
+            <div class="two">
+                <p>2983297293</p>
+                <p>jane@globalark.com</p>
+            </div>
+          </div>
+            <div class="row1">
+                    <div class="heading">
+                        <img src="pic/logo.png" alt="logo image" width="100%" >
+                    </div>
+                    <div class="menu">
+                        <p>Home</p>
+                        <p>Services</p>
+                        <p>Partnership</p>
+                        <p>Contact</p>
+                        <p>About Us</p>
+                    </div>
+              </div>
+              <div class="image">
+                <div class="space">
+                        <div class="col1">
+                                <div>
+                                    <h1>Order Placement</h1>
+                                </div>
+                                <div class="para">
+                                    <p>The process begins when a customer places an order for goods through various channels, such as a website, phone, or in-person.</p>
+                                </div>
+                            <div class="read">
+                                <p>read more</p>
+                            </div>
+                        </div>
+                        <div class="col2">
+                                <div>
+                                    <h1>Inventory Management</h1>
+                                </div>
+                                <div class="para">
+                                    <p>Managing inventory involves monitoring stock levels, replenishing items as needed, 
+                                        and avoiding overstock or stockouts. It ensures a balance between supply and demand.
+                                    </p>
+                                </div>
+                            <div class="read">
+                                <p>read more</p>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div>
+                                <h1>Transportation</h1>
+                            </div>
+                            <div class="para">
+                                <p>Select the appropriate transportation modes (road, rail, air, sea) based on factors like distance, cost, and speed.</p>
+                            </div>
+                            <div class="read">
+                                <p>read more</p>
+                            </div>
+                       </div>
+                    </div>
+           </div>
+           <div class="row3">
+            <div class="imp">
+                         <div class="inside1">
+                             <h1>Warehousing and Storage</h1>
+                             <p>We have buildings that can provide you with distribution, 
+                                 storage, inventory management, order fulfilment, cross-docking, transloading and other value added services.
+                                 Our warehousing space gives you the ability to grow your footprint in a shared environment to minimize costs.</p>
+                         </div>
+                     <div class="inside2">
+                             <h1>What we Offer</h1>
+                         <div class="whole">
+                                 <div class="div1">
+                                     <div class="percent">
+                                         <img src="image/air-freight.jpg" width="100%">
+                                     </div>
+                                     <div class="side">
+                                         <h1>Air Freight</h1>
+                                         <p>Global Ark Logistics partners with airlines and freight forwarders to offer seamless air freight solutions to clients globally.
+                                             We offer a competitive and quick service which includes our air express, high priority (24 hours) delivery, and value services</p>
+                                     </div>
+                                 </div><hr>
+                                 <div class="div2">
+                                     <div  class="percent">
+                                         <img src="image/ocean.jpg" width="100%" >
+                                     </div>
+                                     <div class="side">
+                                         <h1>Ocean Freight</h1>
+                                         <p>Wherever your cargo is going, we can arrange the shipment for you and remain competitive with the market.
+                                             Our ocean freight service volumes provide us buying power with major carriers. 
+                                             We can ship door to door and provide customs clearance.</p>
+                                     </div>
+                                 </div><hr>
+                                 <div class="div3">
+                                     <div  class="percent">
+                                         <img src="image/land-freight.jpg" width="100%" >
+                                     </div>
+                                     <div class="side">
+                                         <h1>Land Freight</h1>
+                                         <p>We work close with strategic partners to ensure our domestic trucking offers clients everything they need. 
+                                         We utilize track and trace capabilities to keep customers informed on their shipments at all times.
+                                         We offer reliable door service and have the ability to route, manage and schedule all shipments with our
+                                         global comprehensive planning tool.</p>
+                                     </div>
+                                 </div>
+                         </div>
+                     </div>
+             </div>
+         </div>
+         <div class="section1">
+            <div class="subsection">
+                <h1>Let's begin our long-term cooperation</h1>
+                <p>Considering the significant changes to the road freight transport industry in 2023 and the uncertainty surrounding their impact on the logistics industry, 
+                    have you secured your capacity for the 2023 season to handle the year-round unpredictability? No matter the status of the market, 
+                    we can guarantee delivery of your goods.</p>
+            </div>
+            <div class="flex">
+                   <div class="sub">
+                            <div class="imageCon1">
+                                <div class="pro">
+                                <img src="image/Project.jpg" width="100%">
+                                </div>
+                                <div class="project">
+                                        <h1>Project Logistics</h1>
+                                        <p>Need to get a project done, but not sure where to start? No problem. Global Ark Logistics can handle your logistics project from A - Z.
+                                            Our teams across the globe are skilled at servicing all levels of the supply chain.
+                                            Give us the details of your product's need and a timeline and we create a solution just for you!</p>
+                                </div>
+                            </div>
+                            <div class="imageCon2">
+                                <div class="comm">
+                                    <img src="image/e-commerce.jpg" width="100%">
+                                </div>
+                                <div class="commerce">
+                                    <h1>E-Commerce Fulfillment</h1>
+                                    <p>EFulfillment is on the rise more than ever. 
+                                    While many warehouses can do it, not many can do it right! We specialize in e-commerce work and have highly trained and experienced teams. 
+                                    We even offer FBA Prep services as an alternative to Fulfilment By Amazon for clients.</p>
+                                </div>
+                            </div>
+                   </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="subend1">
+                  <div>
+                    <h1>Global Ark</h1>
+                  </div><hr>
+                  <div>
+                    <p>We have a strong experienced team of field professionals. 
+                        We are growing constantly: expanding in new markets, 
+                        continue implementing modern and sustainable solutions and strengthening our leadership in tailored, 
+                        customer centric logistic services.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="location">street number & name,postcode/zip</p>
+                  </div>
+                  <div>
+                    <p class="mob">0928309-3892-22</p>
+                  </div>
+                  <div>
+                    <p class="mail">jane@globalark.com</p>
+                  </div>
+            </div>
+            <div class="subend2">
+                 <div>
+                    <h1>Quick Links</h1>
+                 </div><hr>
+                 <div class="anc">
+                    <a href="">Home Page</a>
+                    <a href="">Blog</a>
+                    <a href="">Gallery</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact Us</a>
+                  </div>
+            </div>
+            <div class="subend3">
+                <div>
+                    <h1>Keep in Touch</h1><hr>
+                    <form>
+                        <input type="email" name="email" placeholder="Enter your email Id here...">
+                        <input type="submit" name="Submit">
+                    </form>
+                </div>
+            </div>
+            </div>
+            <div class="copy">
+                <div class="close">
+                     <div>Privacy Policy</div>
+                     <div>Copyright © Global Ark 2023</div>
+                     <div >All Rights Reserved</div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
